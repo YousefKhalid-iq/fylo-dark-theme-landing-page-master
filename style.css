@@ -8,26 +8,51 @@ body {
 }
 
 header {
-	display: flex;
-	flex-direction: row;
+	overflow: hidden;
 	background-color: hsl(217, 28%, 15%);
+	text-align: right;
 }
 
 .logo-header {
 	width: 20%;
-	padding: 7% 5%;
+	padding: 7% 15% 7% 5%;
+	float: left;
+  position: relative;
+	
 }
 
-header a {
-	color: hsl(0, 0%, 100%);
+nav {
+	float: right;
+	width: 50%;
+}
+
+.header-links {
+	padding-top: 10%;
+
+}
+
+.header-links li {
+	display: inline;
+	padding-right: 10%;
+}
+
+.header-links li a {
+	color: color: #B9BBB6;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	font-size: 0.8rem;
-	padding: 7% 0 7% 10%;
+	padding-top: 10%;
 	text-align: right;
 	text-decoration: none;
-	text-align: left;
-	justify-content: space-between;
+	text-align: left;	
+	
+}
+
+.header-links li a:hover {
+	color: hsl(0, 0%, 100%);
+	border-style: solid;
+	border-width: 0 0 1px 0;
+
 }
 
 .first-section {
@@ -102,6 +127,10 @@ h1 {
 	margin-top: 2%;
 	cursor: pointer;
 	font-size: 1rem;
+}
+
+.first-button:hover {
+	filter: brightness(120%);
 }
 
 .second-section {
@@ -197,11 +226,15 @@ p {
 	grid-template-areas: "text icon";
 	width: 40%;
 	margin: 5% 10% 20% 10%;
-	
 	text-align: left;
 	justify-content: left;
 	align-content: center;
 	padding-bottom: 1%;
+	cursor: pointer;
+}
+
+.arrow-flex:hover {
+	filter: brightness(250%);
 }
 
 h4 {
@@ -328,7 +361,7 @@ h3 {
 	width: 100%;
 	background-color: hsl(219, 30%, 18%);
 	border-radius: 0.5rem;
-	margin-bottom: 50%;
+	margin-bottom: 100%;
 }
 
 .profile-3 {
@@ -341,10 +374,12 @@ h3 {
 
 .footer-card {
 	width: 90%;
-	margin: 0 auto;
+	margin: -80% auto 0 auto;
 	background-color: hsl(219, 30%, 16%);
 	border-radius: 1rem;
 	padding-bottom: 10%;
+	position: absolute;
+	left: 5%;
 }
 
 .footer-card-h2 {
@@ -360,9 +395,9 @@ h3 {
 	line-height: 1.25rem;
 }
 
-input {
+.email-input {
 	width: 80%;
-	margin: 0 auto 2% auto;
+	margin: 0 auto 4% auto;
 	display: block;
 	padding: 5% 0;
 	border-radius: 2rem;
@@ -371,15 +406,15 @@ input {
 	padding-left: 10%;
 }
 
-input[type="text"]::placeholder { 
+.email-input[type="text"]::placeholder { 
   opacity: 0.4;
 }
 
-input:focus {
+.email-input:focus {
 	outline-width: 0;
 }
 
-.second-button {
+.second-input {
 	width: 80%;
 	margin: 0 auto;
 	display: block;
@@ -392,10 +427,21 @@ input:focus {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 0.95rem;
+	cursor: pointer;
+}
+
+.second-input:hover {
+	filter: brightness(120%);
+}
+
+footer {
+	background-color: hsl(216, 53%, 9%);
+	padding-top: 40%;
+
 }
 
 .footer {
-	padding-top: 10%;
+	padding-top: 28%;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -404,7 +450,6 @@ input:focus {
 	width: 50%;
 	padding-left: 5%;
 	padding-bottom: 10%;
-
 }
 
 .footer-flex-container {
@@ -468,13 +513,14 @@ ul li {
 
 ul li a {
 	text-decoration: none;
-	color: hsl(0, 0%, 100%);
+	color: #B9BBB6;
 	line-height: 2rem;
+	
 }
 
 ul li a:hover {
-	border-style: solid;
-	border-width: 0 0 1px 0;
+	color: hsl(0, 0%, 100%);
+	opacity: 1;
 }
 
 .social-links {
@@ -501,6 +547,8 @@ ul li a:hover {
   display: block;
   padding: 10%;
 }
+
+
 
 .attribution { 
 	font-size: 11px; text-align: center; 
