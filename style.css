@@ -18,7 +18,6 @@ header {
 	padding: 7% 15% 7% 5%;
 	float: left;
   position: relative;
-	
 }
 
 nav {
@@ -61,7 +60,7 @@ nav {
 }
 
 .intro-images-container {
-	background-color: hsl(217, 28%, 15%);
+	
 }
 
 .intro-img {
@@ -72,7 +71,7 @@ nav {
 	z-index: 1;
 }
 
-.curvy-img {
+.curvy-img-mobile {
 	width: 100%;	
 	display: block;
   position: absolute;
@@ -82,6 +81,10 @@ nav {
   left: 0;
   top: 45%;
   margin: 0 auto;
+}
+
+.curvy-img-desktop {
+	display: none;
 }
 
 .first-section-text {
@@ -104,7 +107,7 @@ h1 {
 
 .first-para {
 	padding: 5% 0 0 0;
-	width: 80%;
+	width: 80;
 	margin: 0 auto;
 	font-weight: 400;
 	font-size: 0.9rem;
@@ -112,6 +115,8 @@ h1 {
 
 .button-cont {
 	 background-color: hsl(218, 28%, 13%);
+	 width: 100%;
+	 margin: 0 auto;
 }
 
 .first-button {
@@ -133,9 +138,13 @@ h1 {
 	filter: brightness(120%);
 }
 
+.middle-grid-container {
+	padding-top: 30%;
+	padding-bottom: 30%;
+}
+
 .second-section {
 	position: relative;
-	padding-top: 30%;
 }
 
 .icon-access {
@@ -190,7 +199,6 @@ p {
 .fifth-section {
 	position: relative;
 	padding-top: 20%;
-	padding-bottom: 30%;
 }
 
 .icon-any-file {
@@ -375,7 +383,7 @@ h3 {
 .footer-card {
 	width: 90%;
 	margin: -80% auto 0 auto;
-	background-color: hsl(219, 30%, 16%);
+	background-color: hsl(217, 28%, 15%);
 	border-radius: 1rem;
 	padding-bottom: 10%;
 	position: absolute;
@@ -406,7 +414,7 @@ h3 {
 	padding-left: 10%;
 }
 
-.email-input[type="text"]::placeholder { 
+.email-input[type="email"]::placeholder { 
   opacity: 0.4;
 }
 
@@ -437,7 +445,6 @@ h3 {
 footer {
 	background-color: hsl(216, 53%, 9%);
 	padding-top: 40%;
-
 }
 
 .footer {
@@ -548,6 +555,293 @@ ul li a:hover {
   padding: 10%;
 }
 
+@media only screen and (min-width: 475px) {
+	.footer {
+		padding-top: 20%;
+	}
+}
+
+@media only screen and (min-width: 575px) {
+	.footer {
+		padding-top: 15%;
+	}
+
+	footer {
+		padding-top: 45%;
+	}
+}
+
+@media only screen and (min-width: 675px) {
+	.footer {
+		padding-top: 5%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	
+	.logo-header {
+		width: 15%;
+		padding: 5% 15% 7% 5%;
+	}
+
+	nav {
+		padding-right: 3%;
+	}
+
+	.intro-img {
+		width: 60%;
+	}
+
+	.curvy-img-mobile {
+		display: none;
+	}
+
+	.curvy-img-desktop {
+		width: 100%;	
+		display: block;
+  	position: absolute;
+		text-align: center;
+  	z-index: 0;
+ 	 	right: 0;
+ 	 	left: 0;
+ 		bottom: 0;
+  	margin: 0 auto;
+
+	}
+
+	.first-section {
+		padding-bottom: 10%;
+	}
+
+	h1 {
+		font-size: 2rem;
+		width: 60%;
+	}
+
+	.first-para {
+		font-size: 1.3rem;
+		width: 60%;
+		opacity: 0.9;
+	}
+
+	.button-cont {
+		background: none;
+	}
+
+	.first-button {
+		width: 30%;
+		border-radius: 3rem;
+		padding: 2% 0;
+	}
+
+	.middle-grid-container {
+		display: grid;
+		grid-template-rows: 2;
+		grid-template-columns: 2;
+		grid-template-areas: "access security"
+		"collab storage";
+		width: 80%;
+		margin: 0 auto;
+		grid-gap: 0 20%;
+		padding-top: 0;
+		padding-bottom: 10%;
+	}
+
+	h2 {
+		width: 100%;
+		font-size: 1.2rem;
+	}
+
+	p {
+		width: 100%;
+		font-size: 0.9rem;
+		opacity: 0.9;
+	}
+
+	.second-section {
+		grid-area: access;
+		padding-top: 21.5%;
+	}
+
+	.third-section {
+		grid-area: security;
+	}
+
+	.fourth-section {
+		grid-area: collab;
+	}
+
+	.fifth-section {
+		grid-area: storage;
+		padding-top: 23%;
+	}
+
+	.sixth-section {
+		display: flex;
+		flex-direction: row;
+		width: 90%;
+		margin: 0 auto;
+		padding-left: 10%;
+	}
+	
+	.stay-porductive-img {
+		width: 90%;
+		padding: 0 10% 0 0;
+	}
+
+	.content-cont {
+		padding-top: 2%;
+	}
+
+	.h2-sixth {
+		text-align: left;
+
+	}
+
+	.first-para-sixth {
+		text-align: left;
+		width: 80%;
+		margin: 0;
+	}
+
+	.second-para-sixth {
+		text-align: left;
+		width: 80%;
+		margin: 0;
+	}
+
+	.arrow-flex {
+		text-align: left;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.seventh-section {
+		display: flex;
+		flex-direction: row;
+		padding-top: 5%;
+		width: 90%;
+		margin-right: 7%;
+	}
+
+	.quotes-img {
+		position: relative;
+		width: 10%;
+		height: 100%;
+		
+  }
+
+	.first-card {
+		position: relative;
+		margin-bottom: 30%;
+		margin-top: 2%;
+		margin-right: 2%;
+		margin-left: 2%;
+		box-shadow: 0 20px 32px rgba(0,0,0,0.11)
+	}
+
+	.first-card h3 {
+		font-size: 0.65rem;
+	}
+
+	.info-para {
+		font-size: 0.55rem;
+	}
+
+	.second-card {
+		margin-bottom: 30%;
+		margin-top: 2%;
+		margin-right: 2%;
+		margin-left: 2%;
+		box-shadow: 0 20px 32px rgba(0,0,0,0.11)
+	}
+
+	.second-card h3 {
+		font-size: 0.65rem;
+	}
+
+	.third-card {
+		margin-bottom: 30%;
+		margin-top: 2%;;
+		margin-right: 2%;
+		margin-left: 2%;
+		box-shadow: 0 20px 32px rgba(0,0,0,0.11)
+	}
+
+	.third-card h3 {
+		font-size: 0.65rem;
+	}
+
+	footer {
+		padding-top: 60%;
+	}
+
+	.footer-card {
+		width: 60%;
+		margin: -75% 0 0 15%;
+		padding-bottom: 5%;
+	}
+
+	.footer-card-h2 {
+		padding-top: 5%;
+		font-size: 1.8rem;
+	}
+
+	.footer-card-p {
+		padding-top: 3%;
+		padding-bottom: 5%;
+	}
+
+	form {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.email-input {
+		margin: 0 auto;
+		width: 60%;
+		padding: 2% 4%;
+
+	}
+
+	.second-input {
+		margin: 0 auto;
+		width: 30%;
+		padding: 3% 0;
+		font-size: 0.85rem;
+	}
+
+
+}
+
+	/* 
+	.email-input {
+	width: 80%;
+	margin: 0 auto 4% auto;
+	display: block;
+	padding: 5% 0;
+	border-radius: 2rem;
+	border-width: 0;
+	box-sizing: border-box;
+	padding-left: 10%;
+}
+
+.second-input {
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+	padding: 5% 0;
+	border-radius: 2rem;
+	border-width: 0;
+	color: hsl(0, 0%, 100%);
+	background: rgb(255,165,119);
+	background: linear-gradient(90deg, hsl(176, 68%, 64%) 0%, hsl(198, 60%, 50%) 100%);
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 0.95rem;
+	cursor: pointer;
+}
+*/
 
 
 .attribution { 
