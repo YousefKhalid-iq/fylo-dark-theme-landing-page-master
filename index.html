@@ -38,7 +38,7 @@
       </nav>
     </header>
   <main>
-    <content>
+    <section>
       <div class="first-section">
         <div class="intro-images-container">
         <img alt="an image of an intro illustration" class="intro-img" src="images/illustration-intro.png">
@@ -179,7 +179,7 @@
           </div>
         </div>
       </div>
-    </content>
+    </section>
   </main>
   <footer>
       <div class="footer-card">
@@ -191,9 +191,12 @@
           questions, our support team would be happy to help you.
         </p>
         <form>
-        <input class="email-input" type="email" name="email" placeholder="email@example.com" oninvalid="this.setCustomValidity('Please Enter a Valid Email Address')">
+        <input class="email-input" type="email" name="email" required placeholder="email@example.com" aria-describedby="error__message">
         <input class="second-input" type="submit" value="Get Started For Free">
         </input>
+        <div class="email-validation" aria-live="assertive">
+           Please enter a valid email address
+          </div>
         </form>
       </div>
       <div class="footer">

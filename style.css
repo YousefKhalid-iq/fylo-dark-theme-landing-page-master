@@ -429,7 +429,7 @@ h3 {
 
 .email-input {
 	width: 80%;
-	margin: 0 auto 4% auto;
+	margin: 0 auto 6% auto;
 	display: block;
 	padding: 5% 0;
 	border-radius: 2rem;
@@ -440,6 +440,10 @@ h3 {
 
 .email-input[type="email"]::placeholder { 
   opacity: 0.4;
+}
+
+.email-input:focus:invalid~.email-validation {
+    visibility: visible;
 }
 
 .email-input:focus {
@@ -464,6 +468,19 @@ h3 {
 
 .second-input:hover {
 	filter: brightness(120%);
+}
+
+.email-validation {
+	position: absolute;
+  top: 69%;
+  left: 10%;
+  color: hsl(0, 100%, 63%);
+  font-size: 0.7rem;
+  font-family: 'Raleway', sans-serif;
+  visibility: hidden;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
 }
 
 footer {
@@ -586,6 +603,9 @@ ul li a:hover {
 	.footer {
 		padding-top: 20%;
 	}
+	.email-validation {
+ 		top: 66.7%; 
+	}
 }
 
 @media only screen and (min-width: 575px) {
@@ -601,6 +621,22 @@ ul li a:hover {
 @media only screen and (min-width: 675px) {
 	.footer {
 		padding-top: 5%;
+	}
+
+	.email-validation {
+ 		top: 66%; 
+	}
+}
+
+@media only screen and (min-width: 720px) {
+	.email-validation {
+ 		top: 65%; 
+	}
+}
+
+@media only screen and (min-width: 820px) {
+	.email-validation {
+ 		top: 64%; 
 	}
 }
 
@@ -633,7 +669,6 @@ ul li a:hover {
  	 	left: 0;
  		bottom: 0;
   	margin: 0 auto;
-
 	}
 
 	.first-section {
@@ -832,7 +867,11 @@ ul li a:hover {
 		margin: 0 auto;
 		width: 60%;
 		padding: 2% 4%;
+	}
 
+	.email-validation {
+ 		top: 87%;
+ 		left: 4%; 
 	}
 
 	.second-input {
